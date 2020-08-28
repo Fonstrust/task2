@@ -1,0 +1,96 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.filter {
+    width: 100%;
+    text-align: center;
+    background: #4a53b9;
+    color: white;
+}
+.table-pagination-wrapper {
+    height: 83%;
+}
+.filter-flex-container {
+    width: 50%;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding-bottom: 25px;
+}
+.filter-flex-container input[type=submit] {
+    align-self: flex-end;
+    height: 25px;
+    width: 20%;
+}
+.filter-flex-container label {
+    width: 25%;
+}
+.filter-flex-container input, select {
+    height: 25px;
+    width: 90%;
+}
+.main-center-table {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+@media screen and (max-width: 1024px){
+    .main-center-table {
+        width: 90%!important;
+        font-size: 2em;
+    }
+    .filter-flex-container {
+        width: 90%!important;
+        font-size: 2em;
+    }
+    .filter-flex-container input, select {
+        height: 50px;
+        width: 90%;
+        font-size: 1em;
+    }
+    .filter-flex-container input[type=submit] {
+        align-self: flex-end;
+        height: 50px;
+        width: 20%;
+    }
+    .pagination-footer {
+        width: 90%!important;
+    }
+    .pagination-num {
+        width: 10%!important;
+        font-size: 2em;
+    }
+}
+.main-center-table td{
+    border: 1px solid black;    
+}
+.white {
+    background: white;
+}
+.gray {
+    background: #d5d9ff;
+}
+.black {
+    background: black!important;
+}
+.pagination-footer {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.pagination-num {
+    width: 2.5%;
+    background: #4a53b9;
+    color: white;
+    border: 2px solid #808aff;
+    margin: 0 5px;
+    text-align: center;
+    cursor: pointer;
+}
