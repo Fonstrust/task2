@@ -1,7 +1,7 @@
 <?php
 include_once('db.php');
 
-if ($_POST['val']) {
+if ($_POST['col']) {
     $conditions = ['=', '>', '<'];
     $sql = mysqli_query($link, "SELECT * FROM `spa` WHERE '".$_POST['col']."' '".$conditions[$_POST['cond']]."'");
     if ($_POST['cond'] == 3) {
