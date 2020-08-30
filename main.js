@@ -173,3 +173,16 @@ form.addEventListener('submit', function(event) {
 	
 	event.preventDefault();
 });
+
+pagPlace.addEventListener('mouseover', function(){
+    let nums = this.children;
+    let count = nums.length;
+    for (let i = 0; i < count; i++) {
+        nums[i].addEventListener('click', function(){
+            for (let j = 0; j < count; j++) {
+                nums[j].classList.remove('black');
+            }
+            this.classList.add('black');
+        });
+    }
+});
